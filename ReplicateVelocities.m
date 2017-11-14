@@ -3,12 +3,12 @@ function ReplicateVelicities
     %Purpose: Combining and plotting replicate velocities Operating with E3
     %as of October 31
     
-clearvars; close all; clc;
+% clearvars; close all; clc;
 
 %Define the wells of interest to be looked at
 WellCell = [19:21;22:23 NaN;43:45;46:47 NaN];
 TimeWindow = 4;
-LegendSet = {'EGF Depleated 500','Control 500','EGF Depleated 1000','Control 1000'};
+LegendSet = {'EGF Depleted 500','Control 500','EGF Depleted 1000','Control 1000'};
 
 [cmap] = cbrewer('qual','Set1',size(WellCell,1));
 colorcounter = 0;
